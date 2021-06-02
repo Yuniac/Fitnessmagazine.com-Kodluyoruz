@@ -327,7 +327,6 @@ article .special-letter:first-letter {
 .instructions-box {
     background-color: grey;
     background-image: url("img/bg-img/bg-img.jpg");
-    background-size: 106%;
     width: 120%;
     margin: 5rem 0;
     padding: 1.5rem 2rem;

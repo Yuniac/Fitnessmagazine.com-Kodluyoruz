@@ -33,7 +33,9 @@ body {
 /* variables */
 
 :root {
-    --color-pink: #ea4c89;
+    --pink-color: #ea4c89;
+    --light-pink-color: #fbc1bb;
+    --dark-pink-color: #cb6374;
     --grey-color: #f3f3f4;
     --hover-grey-color: #e7e7e9;
     --dark-grey-color: #545454;
@@ -89,7 +91,7 @@ body {
 }
 
 .author-description span {
-    color: var(--color-pink)
+    color: var(--pink-color)
 }
 
 
@@ -134,7 +136,7 @@ nav {
 }
 
 .navbar-title h2:hover {
-    color: var(--color-pink);
+    color: var(--pink-color);
 }
 
 .navbar-inner span {
@@ -169,9 +171,11 @@ main {
 .article-intro {
     background-image: url("img/bg-img/bg-img.jpg");
     background-repeat: no-repeat;
+    background-size: 100%;
     display: flex;
     justify-content: space-between;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Lusitana', serif;
+    font-weight: 700;
 }
 
 .intro-containers {
@@ -323,6 +327,7 @@ article .special-letter:first-letter {
 .instructions-box {
     background-color: grey;
     background-image: url("img/bg-img/bg-img.jpg");
+    background-size: 106%;
     width: 120%;
     margin: 5rem 0;
     padding: 1.5rem 2rem;
@@ -440,6 +445,19 @@ article .special-letter:first-letter {
     margin-right: auto;
     margin-right: 18rem;
 }
+
+
+/* .new-year-challenge-container {
+    display: block;
+    margin: 0 auto;
+    margin-right: auto;
+    margin-right: 18rem;
+}
+
+.new-year-challenge-read-more img {
+    width: 32px;
+    fill: pink;
+} */
 
 .more-articles-footer {
     background-color: var(--grey-background-color);
@@ -590,7 +608,7 @@ footer {
 }
 
 .footer-brand:hover {
-    color: var(--color-pink);
+    color: var(--pink-color);
 }
 
 .horizontal-break {
@@ -627,6 +645,9 @@ footer {
         justify-content: space-between;
         width: 70%;
         margin: 2rem auto;
+    }
+    aside .aside-intro-img {
+        margin-right: 2rem;
     }
     aside .aside-intro-img img {
         border: 1px solid var(--border-grey-color);
@@ -724,6 +745,9 @@ footer {
 }
 
 @media (max-width: 1050px) {
+    .article-intro {
+        background-repeat: repeat;
+    }
     aside {
         flex-direction: column;
     }
@@ -792,6 +816,9 @@ footer {
     .navbar-inner {
         min-width: 360px;
         font-size: 0.8rem;
+    }
+    article {
+        width: 90%
     }
     .more-articles-description img {
         width: 70%;

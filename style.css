@@ -423,7 +423,7 @@ article .special-letter:first-letter {
 }
 
 .read-more {
-    margin: 3rem 0;
+    margin: 10rem 0;
     text-align: center;
     width: 123%;
     border: 1px solid var(--border-grey-color);
@@ -438,29 +438,82 @@ article .special-letter:first-letter {
 
 /* end of main-content/article */
 
-.commerical-img {
+
+/* .commerical-img {
     display: block;
     margin: 0 auto;
     margin-right: auto;
     margin-right: 18rem;
+} */
+
+.new-year-challenge {
+    margin: 2rem auto 1rem;
+    position: relative;
 }
 
+.new-year-challenge h2 {
+    font-size: 3.4rem;
+    color: var(--light-pink-color);
+    font-family: 'Lusitana', serif;
+    text-align: center;
+    letter-spacing: 0.3rem;
+    word-spacing: 1rem;
+    border-bottom: 1px double var(--dark-pink-color);
+    padding-bottom: 1rem;
+    position: relative;
+}
 
-/* .new-year-challenge-container {
-    display: block;
-    margin: 0 auto;
-    margin-right: auto;
-    margin-right: 18rem;
+.new-year-challenge h2::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: var(--dark-pink-color);
+    position: absolute;
+    bottom: -14px;
+    left: 0;
+}
+
+.new-year-challenge-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.commerical-img {
+    position: absolute;
+    bottom: -65px !important;
+    left: -162px !important;
+}
+
+.new-year-challenge-read-more {
+    display: flex;
 }
 
 .new-year-challenge-read-more img {
     width: 32px;
-    fill: pink;
-} */
+    cursor: pointer;
+    display: block;
+}
+
+.new-year-challenge-read-more p {
+    margin-right: 2rem;
+    align-self: flex-start;
+}
+
+.new-year-challenge-text-container {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    align-items: flex-end;
+}
+
+.new-year-challenge-text-container p {
+    text-align: center;
+}
 
 .more-articles-footer {
     background-color: var(--grey-background-color);
     width: 100%;
+    margin-top: 14rem;
 }
 
 .more-articles-footer-container {
@@ -666,6 +719,14 @@ footer {
     .read-more {
         width: 100%;
     }
+    .new-year-challenge-text-container {
+        width: 78%;
+        align-items: center;
+    }
+    .commerical-img {
+        bottom: -180px !important;
+        left: -210px !important;
+    }
     .more-articles-footer-container {
         width: 100%;
     }
@@ -757,8 +818,12 @@ footer {
         width: 100%;
     }
     .commerical-img {
-        margin: 2rem 0;
-        width: 100%;
+        position: static;
+    }
+    .new-year-challenge-container {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
     .more-articles-footer-container {
         margin: 0;
@@ -831,6 +896,9 @@ footer {
     .read-more p {
         margin: 0;
         padding: 0 2px;
+    }
+    .commerical-img {
+        width: 100%;
     }
     .footer-container {
         padding: 1rem 0.5rem 1rem;
